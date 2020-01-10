@@ -19,5 +19,11 @@ class Cat
       @@all
     end
     
+    def self.print_all
+      self.all.each.with_index(1) do |cat, i|
+        puts "#{i}. #{cat.name}"
+      end
+    end
+    
     
 end
